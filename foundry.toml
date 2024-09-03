@@ -1,0 +1,18 @@
+[profile.default]
+src = "src"
+gas_reports = ["*"]
+optimizer = true
+optimizer_runs = 10000
+solc_version = "0.8.20"
+viaIR = true
+build_info = true
+extra_output = ["storageLayout"]
+remappings = [
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "@onchain-id/solidity/=lib/solidity/",
+]
+evm_version = "cancun"
+ffi = true
+via_ir = true ## read abaout in: https://docs.soliditylang.org/en/latest/ir-breaking-changes.html
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
